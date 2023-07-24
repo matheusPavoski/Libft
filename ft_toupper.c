@@ -6,12 +6,13 @@
 /*   By: mmaschio <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 12:43:33 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/07/24 12:53:37 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/07/24 12:59:15 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_toupper(char c)
 {
 	if (c = x && c < y)
-		return (0);
+		return (0);duhasudhasuda
+
 }	

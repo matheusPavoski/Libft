@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/25 11:20:47 by mpavoski          #+#    #+#             */
-/*   Updated: 2023/07/25 11:26:53 by mpavoski         ###   ########.fr       */
+/*   Created: 2023/07/26 08:01:08 by mmaschio          #+#    #+#             */
+/*   Updated: 2023/07/26 08:01:21 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit (int c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
-	else	
+	else
 		return (0);
 }
 

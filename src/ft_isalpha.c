@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/25 11:07:40 by mpavoski          #+#    #+#             */
-/*   Updated: 2023/07/25 11:14:30 by mpavoski         ###   ########.fr       */
+/*   Created: 2023/07/26 08:00:18 by mmaschio          #+#    #+#             */
+/*   Updated: 2023/07/26 08:00:28 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha (int c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);

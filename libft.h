@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 09:06:53 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/07/26 09:15:06 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/07/27 09:59:02 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,6 @@ int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
 unsigned long int	ft_strlen(char *str);
+void				*ft_memset(void *ptr_mem, int val_to_exc, size_t num_b);
+void 				ft_bzero(void *ptr_m, size_t num_b);
 #endif

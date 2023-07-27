@@ -6,7 +6,7 @@
 #    By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/27 10:26:22 by mpavoski          #+#    #+#              #
-#    Updated: 2023/07/27 15:40:54 by mpavoski         ###   ########.fr        #
+#    Updated: 2023/07/27 17:35:06 by mpavoski         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,16 +33,13 @@ all: $(NAME)
 $(NAME):
 	$(CC) $(CFLAGS) -c $(SRC)
 	ar rc $(NAME) $(OBJ)
-
-#Regra para limpar tds os arquivos objeto	
+	
 clean:
 	rm -rf $(OBJ)
 
-#Regra para limpar todos os arquivos gerados, incluindo a biblioteca estática
 fclean: clean
 	rm -f $(NAME)
 
-#Regra para recompilar tudo do zero
 re: fclean all
 	
 	

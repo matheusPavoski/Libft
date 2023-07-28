@@ -6,7 +6,7 @@
 /*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 09:06:53 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/07/28 15:17:42 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/07/28 15:36:40 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,5 @@ void				*ft_memmove(void *dest, const void *src, size_t num_b);
 size_t				ft_strlcpy(char *dest, const char *src, size_t len);
 size_t				ft_strlcat(char *dest, const char *src, size_t len);
 int					ft_toupper(int c);
+int					ft_tolower(int c);
 #endif

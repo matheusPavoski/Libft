@@ -6,7 +6,7 @@
 /*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 09:06:53 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/07/28 14:46:07 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/07/28 14:54:30 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ void 				ft_bzero(void *ptr_m, size_t num_b);
 void				*ft_memcpy(void *dest, const void *src, size_t num_b);
 void				*ft_memmove(void *dest, const void *src, size_t num_b);
 size_t				ft_strlcpy(char *dest, const char *src, size_t len);
-size_t				ft_strlcat(char *dest, const char *src, size_t num_b);
+size_t				ft_strlcat(char *dest, const char *src, size_t len);
 #endif

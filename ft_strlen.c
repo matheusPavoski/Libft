@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 08:01:46 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/07/26 08:01:54 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/07/28 13:59:57 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(char *str)
 {
 	int	c;
 

@@ -6,7 +6,7 @@
 /*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 09:06:53 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/07/28 16:19:23 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/07/31 14:08:59 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,5 @@ size_t				ft_strlcat(char *dest, const char *src, size_t len);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 char				*ft_strchr(const char *str, int c);
+char				*ft_strrchr(const char *str, int c);
 #endif

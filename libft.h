@@ -6,7 +6,7 @@
 /*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 09:06:53 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/07/31 14:08:59 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/07/31 15:10:10 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,5 @@ int					ft_toupper(int c);
 int					ft_tolower(int c);
 char				*ft_strchr(const char *str, int c);
 char				*ft_strrchr(const char *str, int c);
+int					ft_strncmp(const char *str1, const char *str2, size_t num_b);
 #endif

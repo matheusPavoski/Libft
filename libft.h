@@ -6,7 +6,7 @@
 /*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 09:06:53 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/01 18:17:25 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/08/01 19:14:26 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,5 @@ char				*ft_strrchr(const char *str, int c);
 int					ft_strncmp(const char *str1, const char *str2, \
 								size_t num_b);
 void				*ft_memchr(const void *ptr, int val_b, size_t num_b);
+int					ft_memcmp(const void *ptr1, const void *ptr2, size_t num_b);
 #endif

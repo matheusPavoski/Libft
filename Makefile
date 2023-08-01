@@ -6,7 +6,7 @@
 #    By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/27 10:26:22 by mpavoski          #+#    #+#              #
-#    Updated: 2023/08/01 18:16:59 by mpavoski         ###   ########.fr        #
+#    Updated: 2023/08/01 19:13:57 by mpavoski         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,8 @@ SRC = ft_isalpha.c\
 	  ft_strchr.c\
 	  ft_strrchr.c\
 	  ft_strncmp.c\
-	  ft_memchr.c
+	  ft_memchr.c\
+	  ft_memcmp.c
 	  
 
 OBJ = $(SRC:.c=.o)

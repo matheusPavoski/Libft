@@ -6,9 +6,11 @@
 /*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/31 13:47:26 by mpavoski          #+#    #+#             */
-/*   Updated: 2023/08/01 08:29:31 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/08/01 14:17:27 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *str, int c)
 {
@@ -23,7 +25,7 @@ char	*ft_strrchr(const char *str, int c)
 			return ((char *)&str[i]);
 		i--;
 	}
-	return ((char *)0);
+	return (NULL);
 }
 
 /*#include <stdio.h>

@@ -6,7 +6,7 @@
 /*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 09:23:38 by mpavoski          #+#    #+#             */
-/*   Updated: 2023/07/27 10:16:00 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/08/01 08:10:56 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_bzero(void *ptr_m, size_t num_b)
 {
-	unsigned char *ptr;
-	size_t i;
+	unsigned char	*ptr;
+	size_t			i;
 
 	ptr = ptr_m;
 	i = 0;

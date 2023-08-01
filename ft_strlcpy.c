@@ -6,7 +6,7 @@
 /*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 12:00:27 by mpavoski          #+#    #+#             */
-/*   Updated: 2023/07/28 12:32:00 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/08/01 08:27:48 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t len)
 		i++;
 	}
 	dest[i] = '\0';
-	return(i);
-}	
+	return (i);
+}
 
 /*#include <stdio.h>
 

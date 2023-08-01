@@ -6,7 +6,7 @@
 /*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 15:26:37 by mpavoski          #+#    #+#             */
-/*   Updated: 2023/07/28 15:33:31 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/08/01 08:30:01 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int	ft_tolower(int c)
 {
 	if ((c >= 'A') && (c <= 'Z'))
 		c = c + 32;
-	return(c);
+	return (c);
 }
 
 /*#include <stdio.h>

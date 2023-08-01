@@ -6,7 +6,7 @@
 /*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 14:16:54 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/07/27 10:04:23 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/08/01 08:16:24 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,17 @@ void	*ft_memset(void *ptr_mem, int val_to_exc, size_t num_b)
 {
 	unsigned char	*ptr;
 	unsigned char	ptrv;
-	size_t i;
-	
+	size_t			i;
+
 	ptr = ptr_mem;
 	ptrv = (unsigned char)val_to_exc;
 	i = 0;
-	while(i < num_b)
+	while (i < num_b)
 	{
 		ptr[i] = ptrv;
 		i++;
 	}
-	return	(ptr);
+	return (ptr);
 }
 
 /*#include <stdio.h>

@@ -6,7 +6,7 @@
 /*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 09:11:46 by mpavoski          #+#    #+#             */
-/*   Updated: 2023/07/28 09:43:06 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/08/01 08:15:26 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memmove(void *dest, const void *src, size_t num_b)
 {
 	unsigned char		*dst;
-	const unsigned char *sorc;
+	const unsigned char	*sorc;
 	size_t				i;
 
 	dst = (unsigned char *)dest;

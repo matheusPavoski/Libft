@@ -6,16 +6,16 @@
 /*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/31 13:47:26 by mpavoski          #+#    #+#             */
-/*   Updated: 2023/07/31 14:08:43 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/08/01 08:29:31 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
-	
+
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 		i++;
 	while (i >= 0)
 	{

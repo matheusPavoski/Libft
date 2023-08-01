@@ -6,7 +6,7 @@
 /*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 15:05:53 by mpavoski          #+#    #+#             */
-/*   Updated: 2023/07/28 15:17:21 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/08/01 08:30:22 by mpavoski         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ int	ft_toupper(int c)
 		c = c - 32;
 	return (c);
 }
-
 
 /*#include <stdio.h>
 #include <ctype.h>

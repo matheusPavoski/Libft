@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+         #
+#    By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/27 10:26:22 by mpavoski          #+#    #+#              #
-#    Updated: 2023/08/02 15:42:03 by mmaschio         ###   ########.fr        #
+#    Updated: 2023/08/04 17:57:03 by mpavoski         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,5 +54,4 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-	
-	
+

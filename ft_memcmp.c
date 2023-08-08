@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/01 18:49:16 by mpavoski          #+#    #+#             */
-/*   Updated: 2023/08/01 19:13:29 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/08/08 11:06:36 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num_b)
 		{
 			if (str1[i] > str2[i])
 				return (1);
-			else 
+			else
 				return (-1);
 		}
 		i++;

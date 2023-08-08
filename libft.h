@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 09:06:53 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/02 15:41:52 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/08 11:00:20 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,5 @@ void				*ft_memchr(const void *ptr, int val_b, size_t num_b);
 int					ft_memcmp(const void *ptr1, const void *ptr2, size_t num_b);
 char				*ft_strnstr(const char *str, const char *sustr, size_t len);
 int					ft_atoi(const char *str);
+void				*ft_calloc(size_t nmemb, size_t size);
 #endif

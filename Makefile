@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+         #
+#    By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/27 10:26:22 by mpavoski          #+#    #+#              #
-#    Updated: 2023/08/04 17:57:03 by mpavoski         ###   ########.fr        #
+#    Updated: 2023/08/08 11:00:36 by mmaschio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,8 @@ SRC = ft_isalpha.c\
 	  ft_memchr.c\
 	  ft_memcmp.c\
 	  ft_strnstr.c\
-	  ft_atoi.c
+	  ft_atoi.c\
+	  ft_calloc.c
 	  
 
 OBJ = $(SRC:.c=.o)

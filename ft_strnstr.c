@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/01 19:18:42 by mpavoski          #+#    #+#             */
-/*   Updated: 2023/08/02 10:46:20 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/08/14 16:57:54 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,13 @@ char	*ft_strnstr(const char *str, const char *sustr, size_t len)
 
 	sub_l = ft_strlen(sustr);
 	i = 0;
+	if (str == NULL || sustr == NULL)
+		return (NULL);
 	if (sustr[i] == '\0')
 		return ((char *)str);
 	if (sub_l > len)
 		return (NULL);
-	while ((i <= len) && (str[i] != '\0'))
+	while ((i <= len - sub_l) && (str[i] != '\0'))
 	{
 		if (ft_strncmp(&str[i], sustr, sub_l) == 0)
 			return ((char *)&str[i]);

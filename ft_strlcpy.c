@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/08 13:48:00 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/08 13:48:06 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/14 15:40:07 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t len)
 	size_t	i;
 
 	i = 0;
-	while ((i < len) && (src[i] != '\0'))
+	if (len == 0)
+		return (ft_strlen(src));
+	while ((i < len - 1) && (src[i] != '\0'))
 	{
 		dest[i] = src[i];
 		i++;

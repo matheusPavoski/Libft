@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/31 13:47:26 by mpavoski          #+#    #+#             */
-/*   Updated: 2023/08/01 14:17:27 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/08/14 15:53:37 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *str, int c)
 		i++;
 	while (i >= 0)
 	{
-		if (str[i] == c)
+		if (str[i] == (char)c)
 			return ((char *)&str[i]);
 		i--;
 	}

@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/08 10:59:28 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/08 12:11:35 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/14 12:33:41 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,14 @@ char	*ft_strdup(const char *src)
 
 	i = 0;
 	len = ft_strlen(src);
-	if (!(new_string = malloc(sizeof(char) * len + 1)))
+	new_string = (char *)malloc(sizeof(char) * (len + 1));
+	if (!(new_string))
 		return (NULL);
 	while (src[i] != '\0')
-		new_string[i++] = *src++;
+	{
+		new_string[i] = src[i];
+		i++;
+	}
 	new_string[i] = '\0';
 	return (new_string);
 }
@@ -40,8 +44,10 @@ int	main(int argc, char **argv)
 	{
 		my_string = ft_strdup(argv[1]);
 		copy = strdup(argv[1]);
-		printf("%s\n", my_string);
-		printf("%s\n", copy);
+		printf("%s\nMinha função: %s\nFunção Original: %s\n",
+			argv[1], my_string, copy);
+		free(my_string);
+		free(copy);
 	}
 	return (0);
 }*/

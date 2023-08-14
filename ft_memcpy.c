@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpavoski <mpavoski@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 15:10:54 by mpavoski          #+#    #+#             */
-/*   Updated: 2023/08/01 08:14:32 by mpavoski         ###   ########.fr       */
+/*   Updated: 2023/08/14 16:54:05 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t num_b)
 	dst = (unsigned char *)dest;
 	sorc = (const unsigned char *)src;
 	i = 0;
+	if (dest == NULL && src == NULL && num_b > 0)
+		return (NULL);
 	while (i < num_b)
 	{
 		dst[i] = sorc[i];

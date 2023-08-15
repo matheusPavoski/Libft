@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:08:14 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/14 17:08:17 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 20:28:32 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,3 @@ char	*ft_strchr(const char *str, int c)
 		return ((char *)&str[i]);
 	return (NULL);
 }
-
-/*#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	const char str[] = "Oi, Mundo!";
-	
-	printf("%s\n", ft_strchr(str, ' '));
-	printf("%s\n", strchr(str, ' '));
-	return (0);
-}*/

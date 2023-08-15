@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:05:29 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/14 17:05:35 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 20:25:58 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,20 +29,3 @@ int	ft_atoi(const char *str)
 		result = 10 * result + (str[i++] - '0');
 	return (result * sign);
 }
-
-/*#include <stdio.h>
-
-int	main(int argc, char **argv)
-{
-	int	my_atoi;
-	int	org_atoi;
-
-	if (argc == 2)
-	{
-		my_atoi = ft_atoi(argv[1]);
-		org_atoi = atoi(argv[1]);
-		printf("Minha atoi: %d\n", my_atoi);
-		printf("Atoi original: %d\n", org_atoi);
-	}
-	return (0);
-}*/

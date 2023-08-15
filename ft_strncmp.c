@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:08:56 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/14 17:08:58 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 20:29:22 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,16 +24,3 @@ int	ft_strncmp(const char *str1, const char *str2, size_t num_b)
 	else
 		return ((int)(unsigned char)str1[i] - (int)(unsigned char)str2[i]);
 }
-
-/*#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	const char	str1[] = "Hello";
-	const char	str2[] = "Hello";
-
-	printf("%d\n", ft_strncmp(str1, str2, 3));
-	printf("%d\n", strncmp(str1, str2, 3));
-	return(0);
-}*/

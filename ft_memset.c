@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:08:04 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/14 17:08:07 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 20:28:28 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,3 @@ void	*ft_memset(void *ptr_mem, int val_to_exc, size_t num_b)
 	}
 	return (ptr);
 }
-
-/*#include <stdio.h>
-#include <string.h>
-int	main(void)
-{
-	char	str[] = "Ogro Feliz";
-	printf("%s\n", (char *)ft_memset(str, '0', 10));
-	printf("%s\n", (char *)memset(str, 'b', 10));
-	return (0);
-}*/

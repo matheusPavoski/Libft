@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:09:14 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/14 17:09:16 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 20:29:32 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,3 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (NULL);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	char	str[] = "Bom dia, dev!";
-
-	printf("%s\n", ft_strrchr(str, 'd'));
-	return(0);
-}*/

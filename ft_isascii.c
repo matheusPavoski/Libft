@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:06:57 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/15 10:12:01 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 20:27:16 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-
-/* #include <stdio.h>
-#include <ctype.h>
-
-int	main(void)
-{
-	int	c;
-
-	c = '%';
-	printf("%d\n", ft_isascii(c));
-	printf("%d\n", isascii(c));
-	return (0);
-} */

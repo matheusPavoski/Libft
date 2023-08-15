@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:07:47 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/14 17:07:49 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 20:27:56 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t num_b)
 	}
 	return (dst);
 }
-
-/*#include <string.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	char	src[] = "Super Mario 64";
-	char	dest[20];
-	ft_memcpy(dest, src, 5);
-	printf("%s\n", dest);
-	return(0);
-}*/

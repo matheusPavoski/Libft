@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:07:34 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/14 17:07:39 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 20:27:47 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,17 +34,3 @@ int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num_b)
 	}
 	return (0);
 }
-
-/*#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	const unsigned char	str1[] = "It's a me, Mario!";
-	const unsigned char	str2[] = "It's a me, Mario!";
-	size_t				num_b = 17;
-
-	printf("%d\n", ft_memcmp(str1, str2, num_b));
-	printf("%d\n", memcmp(str1, str2, num_b));
-	return (0);
-}*/

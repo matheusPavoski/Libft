@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:08:42 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/14 17:08:45 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 20:29:05 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t len)
 	dest[i] = '\0';
 	return (ft_strlen(src));
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	const char	src[] = "Zelda";
-	char		dest[20];
-
-	printf("%zu\n", ft_strlcpy(dest, src, 3));
-	printf("%s\n", dest);
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:07:56 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/14 17:07:58 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 20:28:20 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,16 +40,3 @@ void	*ft_memmove(void *dest, const void *src, size_t num_b)
 	}
 	return (dest);
 }
-
-/*#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	char	src[] = "Salve, meu amigo!";
-	char	dest[20];
-	
-	printf("%s\n", (char *)memmove(dest, src, 5));
-	printf("%s\n", (char *)ft_memmove(dest, src, 5));
-	return (0);
-}*/

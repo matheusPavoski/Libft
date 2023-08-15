@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:06:28 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/15 10:04:16 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 20:26:28 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-
-/*#include <stdio.h>
-#include <ctype.h>
-
-int	main(void)
-{
-	int	c;
-
-	c = 'B';
-	printf("%d\n", ft_isalnum(c));
-	printf("%d\n", isalnum(c));
-	return (0);
-}*/

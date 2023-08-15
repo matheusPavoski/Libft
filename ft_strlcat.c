@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:08:34 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/14 17:08:36 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 20:28:57 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t len)
 	dest[i + dest_l] = '\0';
 	return (dest_l + src_l);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	char dest[30] = "Hello, ";
-	const char src[] = "World!";
-	
-	printf("%ld\n", ft_strlcat(dest, src, 10));
-	return(0);
-}*/

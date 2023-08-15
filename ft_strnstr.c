@@ -6,30 +6,24 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:09:06 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/14 17:09:08 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 16:21:47 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *str, const char *sustr, size_t len)
+char	*ft_strnstr(const char *str, const char *substr, size_t len)
 {
-	size_t	sub_l;
-	size_t	i;
+	size_t	len_substr;
 
-	sub_l = ft_strlen(sustr);
-	i = 0;
-	if (str == NULL || sustr == NULL)
-		return (NULL);
-	if (sustr[i] == '\0')
+	len_substr = ft_strlen(substr);
+	if (*substr == '\0')
 		return ((char *)str);
-	if (sub_l > len)
-		return (NULL);
-	while ((i <= len - sub_l) && (str[i] != '\0'))
+	while (*str && len_substr <= len--)
 	{
-		if (ft_strncmp(&str[i], sustr, sub_l) == 0)
-			return ((char *)&str[i]);
-		i++;
+		if (ft_strncmp(str, substr, len_substr) == 0)
+			return ((char *)str);
+		str++;
 	}
 	return (NULL);
 }

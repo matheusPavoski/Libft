@@ -6,7 +6,7 @@
 #    By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 17:10:06 by mmaschio          #+#    #+#              #
-#    Updated: 2023/08/14 17:10:08 by mmaschio         ###   ########.fr        #
+#    Updated: 2023/08/15 10:11:28 by mmaschio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,9 +45,13 @@ OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME):
-	$(CC) $(CFLAGS) -c $(SRC)
-	ar rc $(NAME) $(OBJ)
+%.o:	%.c
+	$(CC) $(CFLAGS) -c $< -o $@
+	ar rcs $(NAME) $@
+
+$(NAME): $(OBJ)
+# $(CC) $(CFLAGS) -c $(SRC)
+# ar rc $(NAME) $(OBJ)
 	
 clean:
 	rm -rf $(OBJ)

@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:10:16 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/15 13:49:13 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/15 19:54:51 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,5 @@ int					ft_atoi(const char *str);
 void				*ft_calloc(size_t nmemb, size_t size);
 char				*ft_strdup(const char *src);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
+char				*ft_strjoin(char const *s1, char const *s2);
 #endif

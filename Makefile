@@ -6,7 +6,7 @@
 #    By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 17:10:06 by mmaschio          #+#    #+#              #
-#    Updated: 2023/08/17 14:50:06 by mmaschio         ###   ########.fr        #
+#    Updated: 2023/08/17 15:16:15 by mmaschio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,8 @@ SRC = ft_isalpha.c\
 	  ft_striteri.c\
 	  ft_putchar_fd.c\
 	  ft_putstr_fd.c\
-	  ft_putendl_fd.c
+	  ft_putendl_fd.c\
+	  ft_putnbr_fd.c
 
 OBJ = $(SRC:.c=.o)
 

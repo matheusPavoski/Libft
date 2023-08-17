@@ -6,7 +6,7 @@
 #    By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 17:10:06 by mmaschio          #+#    #+#              #
-#    Updated: 2023/08/17 11:14:14 by mmaschio         ###   ########.fr        #
+#    Updated: 2023/08/17 12:00:19 by mmaschio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,10 +52,10 @@ all: $(NAME)
 
 %.o:	%.c
 	$(CC) $(CFLAGS) -c $< -o $@
-	ar rcs $(NAME) $@
+	
 
 $(NAME): $(OBJ)
-	
+	ar rcs $(NAME) $@
 clean:
 	rm -rf $(OBJ)
 

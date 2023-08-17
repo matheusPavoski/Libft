@@ -6,7 +6,7 @@
 #    By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 17:10:06 by mmaschio          #+#    #+#              #
-#    Updated: 2023/08/17 12:00:19 by mmaschio         ###   ########.fr        #
+#    Updated: 2023/08/17 13:10:32 by mmaschio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,16 +44,15 @@ SRC = ft_isalpha.c\
 	  ft_strtrim.c\
 	  ft_split.c\
 	  ft_itoa.c\
-	  ft_strmapi.c
+	  ft_strmapi.c\
+	  ft_striteri.c
 
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
-
 %.o:	%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 	
-
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $@
 clean:

@@ -6,13 +6,13 @@
 #    By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 17:10:06 by mmaschio          #+#    #+#              #
-#    Updated: 2023/08/17 15:16:15 by mmaschio         ###   ########.fr        #
+#    Updated: 2023/08/21 16:59:58 by mmaschio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a 
 
-CC = gcc
+CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -54,11 +54,13 @@ SRC = ft_isalpha.c\
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
-%.o:	%.c
-	$(CC) $(CFLAGS) -c $< -o $@
-	
+
 $(NAME): $(OBJ)
-	ar rcs $(NAME) $@
+
+%.o:	%.c libft.h
+	$(CC) $(CFLAGS) -c $< -o $@
+	ar -rcs $(NAME) $@
+		
 clean:
 	rm -rf $(OBJ)
 

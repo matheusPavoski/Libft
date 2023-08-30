@@ -6,16 +6,16 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/17 08:47:33 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/17 09:52:06 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/30 01:55:46 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_cntstr(char const *s, char c)
+static int	ft_cntstr(char const *s, char c)
 {
-	size_t	cnt;
-	int		i;
+	int	cnt;
+	int	i;
 
 	cnt = 0;
 	i = 0;

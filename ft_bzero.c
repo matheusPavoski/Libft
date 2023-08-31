@@ -6,22 +6,13 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:05:43 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/31 02:53:20 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/31 18:47:24 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *ptr_m, size_t num_b)
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*ptr;
-	size_t			i;
-
-	ptr = ptr_m;
-	i = 0;
-	while (i < num_b)
-	{
-		ptr[i] = '\0';
-		i++;
-	}
+	ft_memset(s, '\0', n);
 }

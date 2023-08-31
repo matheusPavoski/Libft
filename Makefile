@@ -6,7 +6,7 @@
 #    By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 17:10:06 by mmaschio          #+#    #+#              #
-#    Updated: 2023/08/21 16:59:58 by mmaschio         ###   ########.fr        #
+#    Updated: 2023/08/31 05:55:12 by mmaschio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,4 +68,6 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+PHONY: all clean fclean re
 

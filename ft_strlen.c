@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:08:49 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/15 20:29:10 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/31 05:07:27 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlen(const char *str)
 {
-	int	c;
+	int	i;
 
-	c = 0;
-	while (str[c] != '\0')
-		c++;
-	return (c);
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }

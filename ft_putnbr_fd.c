@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/17 15:06:34 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/29 22:41:47 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/31 03:44:48 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (n > 9)
 		ft_putnbr_fd(n / 10, fd);
-	ft_putchar_fd(n % 10 + 48, fd);
+	ft_putchar_fd(n % 10 + '0', fd);
 }

@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/17 14:31:38 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/17 14:31:48 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/31 03:46:13 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,5 @@ void	ft_putstr_fd(char *s, int fd)
 	if (!s)
 		return ;
 	while (s[i] != '\0')
-	{
-		ft_putchar_fd(s[i], fd);
-		i++;
-	}
+		ft_putchar_fd(s[i++], fd);
 }

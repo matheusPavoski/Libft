@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/17 11:00:57 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/17 11:19:00 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/31 05:09:14 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*str;
 
 	i = 0;
-	str = (char *) malloc(ft_strlen(s) + 1);
+	str = malloc(ft_strlen(s) + 1);
 	if (!s || !f)
 		return (NULL);
 	if (!str)

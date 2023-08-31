@@ -6,7 +6,7 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:08:24 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/15 20:28:42 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/31 04:55:48 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strdup(const char *src)
 
 	i = 0;
 	len = ft_strlen(src);
-	new_string = (char *)malloc(sizeof(char) * (len + 1));
+	new_string = malloc(sizeof(char) * (len + 1));
 	if (!(new_string))
 		return (NULL);
 	while (src[i] != '\0')

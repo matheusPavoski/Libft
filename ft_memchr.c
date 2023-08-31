@@ -6,22 +6,22 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:07:26 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/15 20:27:39 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/31 18:29:35 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *ptr, int val_b, size_t num_b)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char		*str;
 	unsigned char			val;
 	size_t					i;
 
-	str = (const unsigned char *)ptr;
-	val = val_b;
+	str = (const unsigned char *)s;
+	val = c;
 	i = 0;
-	while (i < num_b)
+	while (i < n)
 	{
 		if (str[i] == val)
 			return ((char *)&str[i]);

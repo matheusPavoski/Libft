@@ -6,26 +6,26 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:08:24 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/31 04:55:48 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/31 18:54:22 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *src)
+char	*ft_strdup(const char *s)
 {
 	char	*new_string;
 	int		i;
 	size_t	len;
 
 	i = 0;
-	len = ft_strlen(src);
+	len = ft_strlen(s);
 	new_string = malloc(sizeof(char) * (len + 1));
 	if (!(new_string))
 		return (NULL);
-	while (src[i] != '\0')
+	while (s[i] != '\0')
 	{
-		new_string[i] = src[i];
+		new_string[i] = s[i];
 		i++;
 	}
 	new_string[i] = '\0';

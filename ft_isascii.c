@@ -6,14 +6,11 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:06:57 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/15 20:27:16 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/09/01 03:11:56 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	else
-		return (0);
+	return (c >= 0 && c <= 127);
 }

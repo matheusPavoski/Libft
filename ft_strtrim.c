@@ -6,31 +6,40 @@
 /*   By: mmaschio <mmaschio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 13:22:20 by mmaschio          #+#    #+#             */
-/*   Updated: 2023/08/31 05:36:11 by mmaschio         ###   ########.fr       */
+/*   Updated: 2023/08/31 23:37:56 by mmaschio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static int	ft_set_border(char c, char const *str)
+{
+	size_t	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (c == str[i])
+			return (1);
+		i++;
+	}
+	return (0);
+}
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		start;
-	int		end;
-	char	*str;
+	int	start;
+	int	end;
 
 	if (!s1 || !set)
 		return (NULL);
 	start = 0;
-	end = ft_strlen(s1) - 1;
-	while (ft_strchr(set, s1[start]) && start <= end)
+	end = (ft_strlen(s1) - 1);
+	while (ft_set_border(s1[start], set))
 		start++;
-	if (start > end)
-		return (ft_strdup(s1 + end + 1));
-	while (ft_strchr(set, s1[end]) && end >= 0)
+	if (!s1[start])
+		return (ft_calloc(1, 1));
+	while (ft_set_border(s1[end], set))
 		end--;
-	str = malloc(end - start + 2);
-	if (!str)
-		return (NULL);
-	ft_strlcpy(str, &s1[start], end - start + 2);
-	return (str);
+	return (ft_substr(s1, start, (end - start) + 1));
 }
